@@ -4,44 +4,49 @@
   <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>API Rick & Morty</title>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./images/RICK_MORTY_ICON (1).png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./src/images/RICK_MORTY_ICON (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
   <header>
     <nav class="nav-topo">
-      <a href="./index.html"><img class="logo" src="./images/RICK_MORTY_ICON (1).png" alt="Rick and Morty simbolo cinza"/></a>
+      <a href="./index.html"><img class="logo" src="./src/images/RICK_MORTY_ICON (1).png" alt="Rick and Morty simbolo cinza"/></a>
       <div class="nav-links">
           <a class="link-fora" href="https://rickandmortyapi.com/documentation" target="_blank">Docs</a>  
           <a class="link-fora" href="https://rickandmortyapi.com/about" target="_blank">About</a>    
       </div>
     </nav>
-    <nav class="nav-pesquisa">
+    <div class="video">
+      <video class="background-video" autoplay loop>
+        <source src="./src/images/video-laco-orificio.mp4" type="video/mp4"> 
+        Seu navegador não suporta o elemento de vídeo.</video>
+    </div>
+    <nav>
       <h1>API de Rick and Morty</h1>
-      <input id="searchBar" type="text" placeholder="🔎 Pesquise" />
+      <input id="searchBar" type="text" placeholder="Pesquise" />
     </nav>
   </header>
   <main>
-    <div class="container" id="characterContainer">
-      <!-- Aqui é onde os cards dos personagens serão exibidos -->
-    </div>
-    <section id="characters"></section>
-     
-
-      <div class="gif" style="background-color: #222222">
-        <img class="img-footer"
-          src="https://www.icegif.com/wp-content/uploads/2022/06/icegif-519.gif"
-          alt="Rick and Morty"/>
-      </div>
     <div class="pagination">
       <button id="prevPageBtn">Anterior</button>
       <button id="nextPageBtn">Próxima</button>
     </div>
+    <div class="container" id="characterContainer">
+      
+        <!-- Aqui é onde os cards dos personagens serão exibidos -->
+      
+    </div>
+    <section id="characters"></section>
+     <section>
+      <div class="pagination">
+      <button id="prevPageBtn1">Anterior</button>
+      <button id="nextPageBtn1">Próxima</button>
+    </div>
+     </section>
   </main>
   <footer>
     <nav>
@@ -49,17 +54,19 @@
       <h4>Localizações: <span id="localizacoes"></span></h4>
       <h4>Episódios: <span id="episodios"></span></h4>
     </nav>
+    <div class="gif" style="background-color: #222222">
+        <img class="img-footer"
+          src="https://www.icegif.com/wp-content/uploads/2022/06/icegif-519.gif"
+          alt="Rick and Morty"/>
+      </div>
     <p>
       Desenvolvido por:
       <a href="https://github.com/kellycristine" target="_blank"
-        ><span class="name">Kelly Cristine</span></a
-      >
-      em 2023
+        ><span class="name"> Kelly Cristine   </span></a>   em 2023
     </p>
-  </footer>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="./js/script.js"></script>
+  <script src="./src/js/script.js"></script>
 </body>
 </html>

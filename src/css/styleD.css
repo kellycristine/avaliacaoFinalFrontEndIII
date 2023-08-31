@@ -1,0 +1,121 @@
+* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto",
+          "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
+        }
+
+ 
+header .logo {
+    width: 5em;
+  }
+
+main {
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+  
+
+}
+.container{
+    text-align: center;
+}
+.card {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(228, 223, 223);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 27em;
+    transition: ease-in-out 0.5s;
+  }
+    
+  .card:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
+  }
+  
+  .card img {
+    border-radius: 10px;
+    position: relative;
+    width: 60rem;
+    height: 20rem;
+    
+  }
+  
+  .card aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .card .status {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    gap: 10%;
+  }
+  
+  .Dead {
+  
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+  }
+  .Alive {
+    background-color: green;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+  }
+  .unknown {
+    background-color: rgb(61, 61, 61);
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+  }
+  
+  .card h1 {
+    color: rgb(42, 148, 10);
+  }
+  
+  /* Estilos para os cards selecionados */
+  .card.selected {
+    transform: translateX(0);
+    z-index: 1;
+    width: 100%;
+    max-width: 700px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+    transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
+  }
+  
+  /* Estilos para os outros cards */
+  .card:not(.selected) {
+    transition: transform 0.5s ease-in-out;
+  }
+
+@media (max-width: 1530px) {
+    main #characters {
+      padding: 0, 20px;
+    }
+  
+    .card-body {
+        text-align: center !important;
+        position: fixed;
+      flex-direction:row ;
+      width: 15em;
+    }
+  
+    .card img {
+      width: 100%;
+    }
+  
+    .card aside {
+      height: 200px;
+      width: px;
+    }
+  }
