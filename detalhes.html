@@ -1,28 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes do Personagem</title>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalhes do Personagem - API Rick & Morty</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./images/RICK_MORTY_ICON (1).png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./src/images/RICK_MORTY_ICON (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/styleD.css">
 </head>
 <body>
   <header>
-    <h1>Detalhes do Personagem</h1>
+    <nav class="nav-topo">
+      <a href="./index.html"><img class="logo" src="./src/images/RICK_MORTY_ICON (1).png" alt="Rick and Morty simbolo cinza"/></a>
+      <div class="nav-links">
+          <a class="link-fora" href="https://rickandmortyapi.com/documentation" target="_blank">Docs</a>  
+          <a class="link-fora" href="https://rickandmortyapi.com/about" target="_blank">About</a>    
+      </div>
+    </nav>
+    <div class="video">
+      <video class="background-video" autoplay loop>
+        <source src="./src/images/video-laco-orificio.mp4" type="video/mp4"> 
+        Seu navegador não suporta o elemento de vídeo.</video>
+    </div>
+    <nav class="nav-pesquisa">
+      <h1>API de Rick and Morty</h1>
+    </nav>
+    <h2 class="detalhe-personagem">Detalhes do Personagem</h2>
   </header>
   <main>
-    <div id="characterDetails">
+    <div class="container" id="characterDetailsContainer">
       <!-- Aqui é onde os detalhes do personagem serão exibidos -->
     </div>
   </main>
+  <footer class="footer-detalhes">
+    <nav>
+      <h4>Personagens: <span id="personagens"></span></h4>
+      <h4>Localizações: <span id="localizacoes"></span></h4>
+      <h4>Episódios: <span id="episodios"></span></h4>
+    </nav>
+    <p>
+      Desenvolvido por:
+      <a href="https://github.com/kellycristine" target="_blank"
+        ><span class="name">  Kelly Cristine  </span></a>  em 2023
+    </p>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="./js/script.js"></script>
+  <script src="./src/js/detalhes.js"></script>
 </body>
 </html>
