@@ -62,20 +62,20 @@ main {
   .Dead {
   
     background-color: red;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 10px;
   }
   .Alive {
     background-color: green;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 10px;
   }
   .unknown {
     background-color: rgb(61, 61, 61);
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 10px;
   }
   
@@ -118,4 +118,10 @@ main {
       height: 200px;
       width: px;
     }
+  }
+  #characterDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto; /* Ajuste a margem conforme necessário */
   }

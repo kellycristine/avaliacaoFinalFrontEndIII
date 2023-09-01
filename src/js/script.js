@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const characterContainer = document.querySelector("#characterContainer");
   const backButton = document.querySelector("#backButton");
@@ -44,16 +42,16 @@ function loadCharacters(page) {
           <div class="col-md-8">
             <div class="card-body">
               <h1 class="card-title">${personagem.name}</h1>
-                <div class="status">
+                <div class="status mt-4">
                   <div class="${personagem.status}"></div>
                     <h5 class="card-subtitle">${personagem.status} - ${personagem.species}</h5>
                   </div>
                 <div>
-                <h4>Última localização conhecida:</h4>
+                <h4 class="my-3">Última localização conhecida:</h4>
                     <p class="card-text">${personagem.location.name}</p>
         </div>
         <div>
-          <h4>Visto pela última vez em:</h4>
+          <h4 class="my-3">Visto pela última vez em:</h4>
           <p class="card-text">...</p>
         </div>
       </div>
@@ -242,8 +240,7 @@ async function mostrarPersonagem(personagem) {
 }
 
 function buscarPersonagem(nome) {
-  axios
-    .get(apiUrl + "character", {
+  axios.get(apiUrl + "character", {
       params: { name: nome },
     })
     .then((response) => {

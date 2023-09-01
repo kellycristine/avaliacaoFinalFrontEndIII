@@ -210,20 +210,20 @@ span:hover {
 .Dead {
 
   background-color: red;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 10px;
 }
 .Alive {
   background-color: green;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 10px;
 }
 .unknown {
   background-color: rgb(61, 61, 61);
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 10px;
 }
 
