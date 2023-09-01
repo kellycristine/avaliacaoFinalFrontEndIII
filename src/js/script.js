@@ -42,16 +42,16 @@ function loadCharacters(page) {
           <div class="col-md-8">
             <div class="card-body">
               <h1 class="card-title">${personagem.name}</h1>
-                <div class="status mt-4">
+                <div class="status mt-2">
                   <div class="${personagem.status}"></div>
                     <h5 class="card-subtitle">${personagem.status} - ${personagem.species}</h5>
                   </div>
                 <div>
-                <h4 class="my-3">Última localização conhecida:</h4>
+                <h4 class="my-2">Última localização conhecida:</h4>
                     <p class="card-text">${personagem.location.name}</p>
         </div>
         <div>
-          <h4 class="my-3">Visto pela última vez em:</h4>
+          <h4 class="my-2">Visto pela última vez em:</h4>
           <p class="card-text">...</p>
         </div>
       </div>
