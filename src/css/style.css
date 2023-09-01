@@ -8,7 +8,7 @@
   }
 
 header .logo {
-  width: 5em;
+  width: 3em;
 }
 
 header nav {
@@ -191,7 +191,6 @@ span:hover {
   position: relative;
   width: 55rem;
   height: 15rem;
-  
 }
 
 .card aside {
@@ -208,7 +207,6 @@ span:hover {
 }
 
 .Dead {
-
   background-color: red;
   width: 15px;
   height: 15px;
@@ -275,8 +273,6 @@ span:hover {
 
 .footer-detalhes {
   bottom: 0;
-  
   width: 100%;
   height: 20%;
 }
-
