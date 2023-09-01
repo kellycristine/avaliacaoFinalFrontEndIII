@@ -189,8 +189,8 @@ span:hover {
 .card img {
   border-radius: 10px;
   position: relative;
-  width: 60rem;
-  height: 20rem;
+  width: 55rem;
+  height: 15rem;
   
 }
 
@@ -279,3 +279,4 @@ span:hover {
   width: 100%;
   height: 20%;
 }
+
